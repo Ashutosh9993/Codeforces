@@ -1,0 +1,13 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+int n;cin>>n;
+set<int> s;int a,temp,b;cin>>a;
+while(a--){cin>>temp;s.insert(temp);}cin>>b;
+while(b--){cin>>temp;s.insert(temp);}
+if(s.size()<n)cout<<"Oh, my keyboard!"<<"\n";
+else{cout<<"I become the guy."<<"\n";}
+    return 0;
+}
