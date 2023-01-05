@@ -5,5 +5,5 @@ int main(){int n=4;
 long long arr[n];
 for(int i=0;i<n;i++)cin>>arr[i];sort(arr,arr+n);
 for(int i=0;i<3;i++)cout<<arr[3]-arr[i]<<" ";
-    return 0;
+    return 0;  
 }
