@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int maxim(int a,int b,int c){
+    int u=max(a,b),v=max(b,c);
+    return max(u,v);
+}
+
+int main(){
+int n;cin>>n;
+while(n--){
+    int a,b,c,x;cin>>a>>b>>c>>x;
+    int maxnum = maxim(a,b,c),sum=a+b+c,temp=x-(3*maxnum-sum);
+    if(temp%3==0 && temp>=0){cout<<"YES"<<"\n";}
+    else{cout<<"NO"<<"\n";}
+}
+    return 0;
+}
