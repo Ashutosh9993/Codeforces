@@ -1,0 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+int n;cin>>n;int arr[n],pol=0,crime=0,ans=0;
+for(int i=0;i<n;i++){cin>>arr[i];if(arr[i]==-1){crime++;if(pol==0){ans++;}else if(pol>0){pol--;}}else{pol+=arr[i];}}
+cout<<ans;
+    return 0;
+}
