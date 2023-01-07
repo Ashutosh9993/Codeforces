@@ -1,0 +1,8 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+int a,b;cin>>a>>b;int u=max(a,b),v=min(a,b);
+cout<<v<<" "<<(u-v)/2;
+    return 0;
+}
