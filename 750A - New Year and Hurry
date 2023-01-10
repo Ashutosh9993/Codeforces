@@ -1,0 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+int a,b,x=0,temp=0;cin>>a>>b;b=240-b;
+while(x<=a && temp<=b){x++;temp+=5*x;}
+cout<<x-1;
+    return 0;
+}
