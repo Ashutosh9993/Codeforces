@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){//1 5 10 20 100
+int a;cin>>a;int arr[]={1,5,10,20,100},temp=0;
+while(a>0){
+    for(int i=4;i>=0;i--){
+        if(arr[i]<=a){a-=arr[i];temp++;break;}
+    }
+}
+cout<<temp;
+    return 0;
+} 
