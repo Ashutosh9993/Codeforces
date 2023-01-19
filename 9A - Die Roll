@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+int a,b;cin>>a>>b;
+int ans=(7-max(a,b));
+int u= __gcd(ans,6);
+cout<<ans/u<<"/"<<6/u;
+    return 0;
+}
