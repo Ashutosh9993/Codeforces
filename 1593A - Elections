@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+int n;cin>>n;
+while(n--){
+    int a,b,c;cin>>a>>b>>c;int maxi=max(max(a,b),max(b,c));
+    if(a==maxi && a!=b && a!=c){cout<<"0 ";}
+    else{cout<<maxi-a+1<<" ";}
+    if(b==maxi && a!=b && b!=c ){cout<<"0 ";}
+    else{cout<<maxi-b+1<<" ";}
+    if(c==maxi && a!=c && b!=c){cout<<"0 ";}
+    else{cout<<maxi-c+1<<" ";}
+    cout<<endl;
+}
+    return 0;
+}
