@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+int n;cin>>n;
+while(n--){
+    long long a,ans=0,x=INT_MAX,y=INT_MAX;cin>>a;
+    long long arr[a],arrb[a];
+    for(int i=0;i<a;i++){cin>>arr[i];x=min(x,arr[i]);}
+    for(int i=0;i<a;i++){cin>>arrb[i];y=min(y,arrb[i]);}
+    for(int i=0;i<a;i++){ans+=max(arr[i]-x,arrb[i]-y);}
+    cout<<ans<<"\n";
+}
+    return 0;
+}
