@@ -2,6 +2,6 @@
 using namespace std;
  
 int main(){
-    int a;cin>>a;if(a%5==0)cout<<int(a/5);else cout<<(int)a/5+1;
+    int a;cin>>a;if(a%5==0)cout<<int(a/5);else {cout<<(int)a/5+1;}
     return 0;
 }
