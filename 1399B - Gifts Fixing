@@ -9,7 +9,7 @@ while(n--){
     for(int i=0;i<a;i++){cin>>arr[i];x=min(x,arr[i]);}
     for(int i=0;i<a;i++){cin>>arrb[i];y=min(y,arrb[i]);}
     for(int i=0;i<a;i++){ans+=max(arr[i]-x,arrb[i]-y);}
-    cout<<ans<<"\n";
+    cout<<ans<<endl;
 }
     return 0;
 }
