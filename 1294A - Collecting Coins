@@ -7,8 +7,8 @@ int maxim(int a,int b,int c){
 }
 
 int main(){
-int n;cin>>n;
-while(n--){
+int t;cin>>t;
+while(t--){
     int a,b,c,x;cin>>a>>b>>c>>x;
     int maxnum = maxim(a,b,c),sum=a+b+c,temp=x-(3*maxnum-sum);
     if(temp%3==0 && temp>=0){cout<<"YES"<<"\n";}
